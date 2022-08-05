@@ -9,16 +9,71 @@
 <body>
     <table class="table-hover text-nowrap" id="tb_kerusakan">
         <thead>
-            <th>No Perbaikan</th>
+            <th>No.Perbaikan</th>
+            <td>:</td>
+                <td><input type="text" name="No.Perbaikan"><br></td>
+        </thead>
+
+        <thead>
             <th>Departemen</th>
-            <th>No Mesin</th>
+            <td>:</td>
+                <td><select name="Departemen">
+                    <option value="Kenza">Kenza</option>
+                    <option value="Tooling & Kaizen">Tooling & Kaizen</option>
+                    <option value="Maintenace">Maintenace</option>
+                    </select></td>
+        </thead>
+
+        <thead>
+            <th>No.Mesin</th>
+            <td>:</td>
+                <td><input type="text"name= No.Mesin/></td>
+        </thead>
+
+        <thead>         
             <th>Nama Mesin</th>
-            <th>Klasifikasi</th>
-            <th>Status</th>
-            <th>Tgl Rusak</th>
-            <th>Tgl Mulai Perbaikan</th>
-            <th>Tgl Selesai</th>
-            <th>Jam kerusakan</th>
+            <td>:</td>
+                 <td><input type="checkbox" name="Camu"/>Camu</input>
+                    <input type="checkbox" name="Naira"/>Naira</input>
+        </thead>
+
+        <thead>
+            <th>Klasifikasi Kerusakan</th>
+            <td>:</td>
+            <td><textarea name="Klasifikasi" cols="30" rows="4"></textarea></td>
+        </thead>
+        
+        <thead>
+            <th>Status/Kondisi Mesin</th>
+            <td>:</td>
+                 <td><input type="checkbox"name="On"/>On</input>
+                    <input type="checkbox"name="Off"/>Off</input>
+        </thead>
+
+        <thead>
+            <th>Tanggal kerusakan</th>
+            <td>:</td>
+                <td><input type="text"name="Tanggal Kerusakan"/></td>
+        </thead>
+
+        <thead>
+            <th>Tanggal Perbaikan</th>
+            <td>:</td>
+                <td><input type="text"name="Tanggal Perbaikan"/></td>
+        </thead>
+
+        <thead>
+            <th>Tanggal Selesai Perbaikan</th>
+            <td>:</td>
+              <td><input type="text"name="Tgl Selesai perbaikan"/></td>
+        </thead>
+
+        <thead>
+            <th>Jam kerusakan Mesin</th>
+            <td>:</td>
+                <td><input type="text"name="Jam Kerusakan Mesin"></td>
+        </thead>
+            
         </thead>
     </table>
 </body>
