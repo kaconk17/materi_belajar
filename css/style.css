@@ -3,17 +3,18 @@ body{
 }
 
 .text-biru{
-    color:blue; 
+    color:black; 
     font-family: 'Times New Roman', Times, serif;
     padding:10px 20px;
     border: 1px;
     font-size: 12pt;
 }
 
-.tombol{
+/*.tombol{
     background-color:deeppink;
     color: blue;
 }
-
-
-
+*/
+.tengah{
+  margin-top: 30%;
+}

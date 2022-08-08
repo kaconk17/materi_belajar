@@ -5,80 +5,113 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
-    <table class="table-hover text-nowrap" id="tb_kerusakan">
-        <thead>
-            <th class="text-biru">No.Perbaikan</th>
-            <td>:</td>
-                <td><input type="text" name="No.Perbaikan"><br></td>
-        </thead>
+    <!-- Button trigger modal -->
+    <div class="text-center tengah">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Launch demo modal
+        </button>
+    </div>
 
-        <thead>
-            <th class="text-biru">Departemen</th>
-            <td>:</td>
-                <td><select name="Departemen">
-                    <option value="Kenza">Kenza</option>
-                    <option value="Tooling & Kaizen">Tooling & Kaizen</option>
-                    <option value="Maintenace">Maintenace</option>
-                    </select></td>
-        </thead>
-
-        <thead>
-            <th class="text-biru">No.Mesin</th>
-            <td>:</td>
-                <td><input type="text"name= No.Mesin/></td>
-        </thead>
-
-        <thead>         
-            <th class="text-biru">Nama Mesin</th>
-            <td>:</td>
-                 <td><input type="checkbox" name="Camu"/>Camu</input>
-                    <input type="checkbox" name="Naira"/>Naira</input>
-        </thead>
-
-        <thead>
-            <th class="text-biru">Klasifikasi Kerusakan</th>
-            <td>:</td>
-            <td><textarea name="Klasifikasi" cols="30" rows="4"></textarea></td>
-        </thead>
+ 
+    
+    
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <table class="table-hover text-nowrap" id="tb_kerusakan">
+                <thead>
+                    <th class="text-biru">No.Perbaikan</th>
+                    <td>:</td>
+                        <td><input class="form-control"type="text" name="No.Perbaikan"><br></td>
         
-        <thead>
-            <th class="text-biru">Status/Kondisi Mesin</th>
-            <td>:</td>
-                 <td><input type="checkbox"name="On"/>On</input>
-                    <input type="checkbox"name="Off"/>Off</input>
-        </thead>
+                </thead>
+        
+                <thead>
+        
+                    <th class="text-biru">Departemen</th>
+                    <td>:</td>
+                        <td><select class="form-control"name="Departemen">
+                            <option value="Kenza">Kenza</option>
+                            <option value="Tooling & Kaizen">Tooling & Kaizen</option>
+                            <option value="Maintenace">Maintenace</option>
+                            </select></td>
+                </thead>
+        
+                <thead>
+                    <th class="text-biru">No.Mesin</th>
+                    <td>:</td>
+                        <td><input class="form-control" type="text"name= No.Mesin/></td>
+                </thead>
+        
+                <thead>         
+                    <th class="text-biru">Nama Mesin</th>
+                    <td>:</td>
+                         <td><input class="form-check-input" type="checkbox" name="Camu"/>Camu</input>
+                            <input class="form-check-input" type="checkbox" name="Naira"/>Naira</input>
+                </thead>
+        
+                <thead>
+                    <th class="text-biru">Klasifikasi Kerusakan</th>
+                    <td>:</td>
+                    <td><input class="form-control"textarea name="Klasifikasi" cols="30" rows="4"></textarea></td>
+                </thead>
+                
+                <thead>
+                    <th class="text-biru">Status/Kondisi Mesin</th>
+                    <td>:</td>
+                         <td><input class="form-check-input"  type="checkbox" name="On"/>On</input>
+                            <input class="form-check-input" type="checkbox"name="Off"/>Off</input>
+                        
+        
+                <thead>
+                    <th class="text-biru">Tanggal kerusakan</th>
+                    <td>:</td>
+                        <td><input class="form-control"  type="text"name="Tanggal Kerusakan"/></td>
+                </thead>
+        
+                <thead>
+                    <th class="text-biru">Tanggal Perbaikan</th>
+                    <td>:</td>
+                        <td><input class="form-control" type="text" name="Tanggal Perbaikan"/></td>
+                </thead>
+        
+                <thead>
+                    <th class="text-biru">Tanggal Selesai Perbaikan</th>
+                    <td>:</td>
+                      <td><input class="form-control" type="komentar" name="Tgl Selesai perbaikan"/></td>
+                </thead>
+        
+                <thead>
+                    <th class="text-biru">Jam kerusakan Mesin</th>
+                    <td>:</td>
+                        <td><input class="form-control" type="text"name="Jam Kerusakan Mesin"></td>
+                </thead>
+            
+        
+                </thead>
+            </table>
+        </div>
+        <div class="modal-footer ">
+            
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-        <thead>
-            <th class="text-biru">Tanggal kerusakan</th>
-            <td>:</td>
-                <td><input type="text"name="Tanggal Kerusakan"/></td>
-        </thead>
-
-        <thead>
-            <th class="text-biru">Tanggal Perbaikan</th>
-            <td>:</td>
-                <td><input type="text"name="Tanggal Perbaikan"/></td>
-        </thead>
-
-        <thead>
-            <th class="text-biru">Tanggal Selesai Perbaikan</th>
-            <td>:</td>
-              <td><input type="text"name="Tgl Selesai perbaikan"/></td>
-        </thead>
-
-        <thead>
-            <th class="text-biru">Jam kerusakan Mesin</th>
-            <td>:</td>
-                <td><input type="text"name="Jam Kerusakan Mesin"></td>
-        </thead>
-       
-            <td><input class="tombol" type="Submit" value="Submit"></td>
-
-        </thead>
-    </table>
 </body>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </html>
